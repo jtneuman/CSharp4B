@@ -49,7 +49,7 @@
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnThree = new System.Windows.Forms.Button();
             this.btnSubtract = new System.Windows.Forms.Button();
-            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnEquals = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnAddition = new System.Windows.Forms.Button();
@@ -269,14 +269,15 @@
             this.btnSubtract.UseVisualStyleBackColor = true;
             this.btnSubtract.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // btnCalculate
+            // btnEquals
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(236, 240);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(50, 106);
-            this.btnCalculate.TabIndex = 22;
-            this.btnCalculate.Text = "=";
-            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnEquals.Location = new System.Drawing.Point(236, 240);
+            this.btnEquals.Name = "btnEquals";
+            this.btnEquals.Size = new System.Drawing.Size(50, 106);
+            this.btnEquals.TabIndex = 22;
+            this.btnEquals.Text = "=";
+            this.btnEquals.UseVisualStyleBackColor = true;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btnZero
             // 
@@ -316,7 +317,7 @@
             this.Controls.Add(this.btnAddition);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnZero);
-            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.btnThree);
             this.Controls.Add(this.btnTwo);
@@ -368,7 +369,7 @@
         private System.Windows.Forms.Button btnTwo;
         private System.Windows.Forms.Button btnThree;
         private System.Windows.Forms.Button btnSubtract;
-        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnAddition;
